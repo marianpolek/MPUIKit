@@ -14,6 +14,7 @@
 		1D12277794FD41A7C241C7ED0842C1F7 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B91263642D5BDEDBA2088324A87EB /* Date+Extensions.swift */; };
 		249993C9F5D58B52D16CD257B85334F0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1EB3DE4C427E508C9E53F8B3FAFD4B /* UIViewController+Extensions.swift */; };
 		2CE194563F15A205507FB8147E17E307 /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA355B7C69AFDB9AAE5312B055E41998 /* NSLayoutConstraint+Extensions.swift */; };
+		467E9E0B2BC4594400C57692 /* UniSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467E9E0A2BC4594400C57692 /* UniSnackBar.swift */; };
 		4C3DFCAAED98CF87EEC30700CF56C330 /* UniImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FBEB1FE8C3163D9F63F6E89FCAF362 /* UniImageView.swift */; };
 		4F659F7B9A7326D70B929098ED4F5ADD /* UniTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913732E2F6BF9B8DE49B537F6DBD3B0 /* UniTextFieldView.swift */; };
 		6619AAAE499191B00B2680E18F914E0C /* UniTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4013FA138D325204FA09F82CE931C4 /* UniTitleView.swift */; };
@@ -29,7 +30,7 @@
 		A6982BD76F9A29FE6104C592D097A8F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		A7B9D5FFE9914D642F64773C58A0AC56 /* MPUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25204740F10A01E3D6AC28E2427B9DF1 /* MPUIKit-dummy.m */; };
 		BE5AC7FEDADE5FB69408C47B76B57A92 /* UniLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B575584E680EBF8D93984F25C469FB /* UniLoadingView.swift */; };
-		C4797BB5A89D3319BCDDAFB231221893 /* NotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C6DE38106704547E9DB5C4E5EEEC /* NotificationBanner.swift */; };
+		C4797BB5A89D3319BCDDAFB231221893 /* UniNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C6DE38106704547E9DB5C4E5EEEC /* UniNotificationBanner.swift */; };
 		CD53C85345F9B38C4D54E13B65B8D46B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D65447890624EE8356AA008830DC261 /* Protocols.swift */; };
 		D3369FEB0D5BA1D9BBACBF381F57E530 /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DE217419934CEF0DE1ECCE4877DCFF /* UINavigationItem+Extensions.swift */; };
 		D49A0377490560240D3753A39069F8AE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBAFDE238A2A6CA6CCAFB19F3F5D42 /* UIView+Extensions.swift */; };
@@ -53,18 +54,19 @@
 /* Begin PBXFileReference section */
 		0A426487992D870A60E9BCACADC9974B /* Pods-MPUIKit_example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MPUIKit_example-frameworks.sh"; sourceTree = "<group>"; };
 		1913732E2F6BF9B8DE49B537F6DBD3B0 /* UniTextFieldView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniTextFieldView.swift; sourceTree = "<group>"; };
-		218093DDFB2F7B795A4DAF94271C3500 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		218093DDFB2F7B795A4DAF94271C3500 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		21B6743456ED74CF2E013BDFE3278521 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		21BCD27B154E03939E3EC5D4493CB775 /* Pods-MPUIKit_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MPUIKit_example.release.xcconfig"; sourceTree = "<group>"; };
 		25204740F10A01E3D6AC28E2427B9DF1 /* MPUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPUIKit-dummy.m"; sourceTree = "<group>"; };
 		2D64A4B4FDC7F48387E63DFD3C45CE3B /* ShimmerTitleLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShimmerTitleLoadingView.swift; sourceTree = "<group>"; };
-		3129C6DE38106704547E9DB5C4E5EEEC /* NotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationBanner.swift; sourceTree = "<group>"; };
+		3129C6DE38106704547E9DB5C4E5EEEC /* UniNotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniNotificationBanner.swift; sourceTree = "<group>"; };
 		35500F569704010FAAFF0A0CA77F00FB /* Pods-MPUIKit_example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MPUIKit_example.debug.xcconfig"; sourceTree = "<group>"; };
 		3DA16CDE784961F137486594063E2FEA /* ViewWithOutboundsButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewWithOutboundsButtons.swift; sourceTree = "<group>"; };
 		3FCD9A8D4BAFF6A1B9FB83D236D98378 /* UniViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UniViewController.swift; path = MPUIKit/Classes/UniViewController.swift; sourceTree = "<group>"; };
 		457B91263642D5BDEDBA2088324A87EB /* Date+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		467E9E0A2BC4594400C57692 /* UniSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniSnackBar.swift; sourceTree = "<group>"; };
 		48C2E5EC533515D87E0BC3186EA8E7D8 /* MPUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPUIKit.debug.xcconfig; sourceTree = "<group>"; };
-		4AC9F9524FEF55F6D75618AE4D3E9A8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		4AC9F9524FEF55F6D75618AE4D3E9A8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4C10E30B8E6AD3A9E164F32ED7D65035 /* UniButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniButtonView.swift; sourceTree = "<group>"; };
 		4D1EB3DE4C427E508C9E53F8B3FAFD4B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		4D65447890624EE8356AA008830DC261 /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = MPUIKit/Classes/Protocols.swift; sourceTree = "<group>"; };
@@ -82,11 +84,11 @@
 		9967AA3701792572B560267B60C6D792 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
 		9B7818C78CC838179546434B6271B2CF /* MPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MPUIKit-Info.plist"; sourceTree = "<group>"; };
 		9D8C8AB3D7DBB18CB1317698283CE2EA /* MPUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPUIKit-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0B575584E680EBF8D93984F25C469FB /* UniLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniLoadingView.swift; sourceTree = "<group>"; };
 		B4148DA5AB2E0442109920F435820039 /* PaginationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaginationManager.swift; sourceTree = "<group>"; };
 		B8179A6D1452F8164A3DE75200C3CDB2 /* Pods-MPUIKit_example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MPUIKit_example-acknowledgements.plist"; sourceTree = "<group>"; };
-		BCAF5637C9D507112CCCBB387D624AE3 /* MPUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MPUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BCAF5637C9D507112CCCBB387D624AE3 /* MPUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MPUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C7FD712BAB899A8ACD242AA7F96E3EE8 /* MPUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPUIKit.release.xcconfig; sourceTree = "<group>"; };
 		C8D097F2C7588F6184C8F9CE76B41766 /* UniTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniTableViewCell.swift; sourceTree = "<group>"; };
 		D062225C29F2E03BBE176BCE09364740 /* UniSeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniSeparatorView.swift; sourceTree = "<group>"; };
@@ -141,7 +143,7 @@
 		38992F117C97179E5FE6855AE8DB5A18 /* ItemsViews */ = {
 			isa = PBXGroup;
 			children = (
-				3129C6DE38106704547E9DB5C4E5EEEC /* NotificationBanner.swift */,
+				3129C6DE38106704547E9DB5C4E5EEEC /* UniNotificationBanner.swift */,
 				2D64A4B4FDC7F48387E63DFD3C45CE3B /* ShimmerTitleLoadingView.swift */,
 				4C10E30B8E6AD3A9E164F32ED7D65035 /* UniButtonView.swift */,
 				74FBEB1FE8C3163D9F63F6E89FCAF362 /* UniImageView.swift */,
@@ -152,6 +154,7 @@
 				1913732E2F6BF9B8DE49B537F6DBD3B0 /* UniTextFieldView.swift */,
 				EE4013FA138D325204FA09F82CE931C4 /* UniTitleView.swift */,
 				3DA16CDE784961F137486594063E2FEA /* ViewWithOutboundsButtons.swift */,
+				467E9E0A2BC4594400C57692 /* UniSnackBar.swift */,
 			);
 			name = ItemsViews;
 			path = MPUIKit/Classes/ItemsViews;
@@ -390,7 +393,7 @@
 				8D53C74AE1C79AF5EAD97BE9F8AA1A68 /* CGRect+Extensions.swift in Sources */,
 				1D12277794FD41A7C241C7ED0842C1F7 /* Date+Extensions.swift in Sources */,
 				A7B9D5FFE9914D642F64773C58A0AC56 /* MPUIKit-dummy.m in Sources */,
-				C4797BB5A89D3319BCDDAFB231221893 /* NotificationBanner.swift in Sources */,
+				C4797BB5A89D3319BCDDAFB231221893 /* UniNotificationBanner.swift in Sources */,
 				2CE194563F15A205507FB8147E17E307 /* NSLayoutConstraint+Extensions.swift in Sources */,
 				71E823BAA1DD344D50E668BD676221CB /* PaginationManager.swift in Sources */,
 				CD53C85345F9B38C4D54E13B65B8D46B /* Protocols.swift in Sources */,
@@ -410,6 +413,7 @@
 				4F659F7B9A7326D70B929098ED4F5ADD /* UniTextFieldView.swift in Sources */,
 				6619AAAE499191B00B2680E18F914E0C /* UniTitleView.swift in Sources */,
 				F66D314EF8CCB4B2A1F2AA6DFAE4AB58 /* UniViewController.swift in Sources */,
+				467E9E0B2BC4594400C57692 /* UniSnackBar.swift in Sources */,
 				8572591DEF07B77A6D04336663C47636 /* UniViewModelBase.swift in Sources */,
 				9D24DD43758B5E6C78748A6B81AFC745 /* ViewWithOutboundsButtons.swift in Sources */,
 			);

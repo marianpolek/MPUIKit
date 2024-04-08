@@ -335,7 +335,7 @@ open class UniViewController: UIViewController {
             DispatchQueue.main.async { [weak self] in
                 if let config = config {
                     
-                    let bannerChipView = self?.wholeScreenStackView.getBannerView() ?? NotificationBanner(frame: .basic)
+                    let bannerChipView = self?.wholeScreenStackView.getBannerView() ?? UniNotificationBanner(frame: .basic, showFromTop: true)
 //                    bannerChipView.apply(skin: config.skin)
                     if let image = config.icon {
 //                        bannerChipView.leftImage(image: config.icon, width: 24, height: 24)

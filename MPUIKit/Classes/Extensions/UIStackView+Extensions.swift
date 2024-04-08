@@ -9,21 +9,21 @@ import Foundation
 
 public extension UIStackView {
     
-    func getBannerView() -> NotificationBanner? {
+    func getBannerView() -> UniNotificationBanner? {
         
         for vv in self.arrangedSubviews {
-            if vv.isKind(of: NotificationBanner.self) {
-                return vv as? NotificationBanner
+            if vv.isKind(of: UniNotificationBanner.self) {
+                return vv as? UniNotificationBanner
             }
         }
         return nil
     }
     
-    func addBannerView(_ chip: NotificationBanner, tableView: UniTableView?) {
+    func addBannerView(_ chip: UniNotificationBanner, tableView: UniTableView?) {
         
         var contains = false
         for vv in self.arrangedSubviews {
-            if vv.isKind(of: NotificationBanner.self) {
+            if vv.isKind(of: UniNotificationBanner.self) {
                 contains = true
             }
         }
@@ -37,7 +37,7 @@ public extension UIStackView {
     func removeBannerView(tableView: UniTableView?) {
         
         for vv in self.arrangedSubviews {
-            if vv.isKind(of: NotificationBanner.self) {
+            if vv.isKind(of: UniNotificationBanner.self) {
                 self.removeArrangedSubview(vv)
                 vv.removeFromSuperview()
                 return

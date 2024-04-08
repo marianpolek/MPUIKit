@@ -88,7 +88,7 @@ class ExampleUniViewModel: UniViewModelBase {
 
                                let bannerConfig = NotificationBannerConfig(
                                    title: String.random(length: 30),
-                                   icon: UIImage.init(named: "Info-filled")
+                                   icon: UIImage.init(systemName: "info.circle.fill")
                                )
                                self?.output.bannerConfig?(bannerConfig)
                            }),
