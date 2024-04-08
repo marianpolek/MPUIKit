@@ -38,7 +38,7 @@ class TypesListViewModel: UniViewModelBase {
         
         tableItems.removeAll()
         tableItems = [
-            (nil,
+            (UniTitleView(text: "SCREEN TYPES"),
              [UniButtonView(button: UniButton()
                                     .title("classic table footer")
                                     .isEnabled(true)
@@ -63,7 +63,16 @@ class TypesListViewModel: UniViewModelBase {
                                     .tapAction { [weak self] in
                                         self?.coordinator.showNextScreen(.stickyDownBodyMiddle)
                                     }, .horizontal20Vertical10)
-             ])
+             ]),
+            (UniTitleView(text: "OTHER TYPES"),
+            [
+                UniButtonView(button: UniButton()
+                                      .title("Pagination example (classic table)")
+                                      .isEnabled(true)
+                                      .tapAction { [weak self] in
+                                          self?.coordinator.showPaginationExample()
+                                      }, .horizontal20Vertical10),
+            ])
         ]
         
         self.output.reloadTableData?(self.footerType)

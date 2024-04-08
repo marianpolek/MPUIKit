@@ -12,6 +12,7 @@ import MPUIKit
 public protocol TypesListCoordinatorType {
 
     func showNextScreen(_ type: UniViewController.FooterStickyType)
+    func showPaginationExample()
 }
 
 public class TypesListCoordinator: TypesListCoordinatorType {
@@ -48,5 +49,12 @@ public class TypesListCoordinator: TypesListCoordinatorType {
             
             Example2UniViewControllerCoordinator(rootViewController: cc).start(type)
         }
+    }
+    
+    public func showPaginationExample() {
+        
+        guard let cc = currentController else { return }
+        PaginationUniViewControllerCoordinator(rootViewController: cc).start(.classicTableFooter)
+
     }
 }

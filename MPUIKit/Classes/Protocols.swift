@@ -17,3 +17,8 @@ protocol PaginationViewModelType {
 protocol PaginationUITableViewDelegate: UITableViewDelegate {
     
 }
+
+public enum CompletionResult<T,B> {
+    case value(T)
+    case error(B)
+}

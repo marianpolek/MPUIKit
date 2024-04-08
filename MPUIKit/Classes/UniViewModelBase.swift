@@ -10,8 +10,8 @@ import UIKit
 
 open class UniViewModelBase: BaseViewModel, ViewModelType, PaginationViewModelType {
     
-    public func pullToRefresh() {}
-    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView, _ tableView: UITableView) {}
+    open func pullToRefresh() {}
+    open func scrollViewDidEndDecelerating(_ scrollView: UIScrollView, _ tableView: UITableView) {}
     
     public var input = Input()
     public var output = Output()

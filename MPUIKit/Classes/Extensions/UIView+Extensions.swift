@@ -138,4 +138,57 @@ public extension UIView {
             ]
         )
     }
+    
+    static func loadingTableFooterView() -> UIView {
+        
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40))
+        view.backgroundColor = .clear
+        let indicator = UniLoadingView()
+        indicator.startActivityIndicator()
+        indicator.center = view.center
+        view.addSubview(indicator)
+        return view
+    }
+    
+    func showLoader(text: String? = nil) {
+        if self.containsType(class: UniLoadingView.self) != nil { return }
+
+        let loadingView = UniLoadingView()
+        loadingView.alpha = 0
+
+        DispatchQueue.main.async {
+            self.addSubview(loadingView)
+            
+            loadingView.translatesAutoresizingMaskIntoConstraints = false
+            
+            NSLayoutConstraint.activate(
+                [
+                    loadingView.topAnchor.constraint(equalTo: self.topAnchor),
+                    loadingView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+                    loadingView.leftAnchor.constraint(equalTo: self.leftAnchor),
+                    loadingView.rightAnchor.constraint(equalTo: self.rightAnchor)
+                ]
+            )
+            loadingView.startActivityIndicator()
+        }
+        
+        loadingView.alpha = 1.0
+    }
+    
+    func hideLoader() {
+        guard let loadingView = self.containsType(class: UniLoadingView.self) else { return }
+
+        loadingView.stopActivityIndicator()
+        loadingView.alpha = 0
+        loadingView.removeFromSuperview()
+    }
+    
+    func containsType<T>(class: T.Type) -> T? {
+        for view in self.subviews {
+            if let view2 = view as? T {
+                return view2
+            }
+        }
+        return nil
+    }
 }
