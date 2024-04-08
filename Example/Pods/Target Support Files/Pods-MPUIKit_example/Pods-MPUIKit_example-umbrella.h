@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_MPUIKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_MPUIKitVersionString[];
+FOUNDATION_EXPORT double Pods_MPUIKit_exampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_MPUIKit_exampleVersionString[];
 

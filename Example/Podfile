@@ -1,11 +1,12 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'MPUIKit' do
+target 'MPUIKit_example' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for MPUIKit
-  pod 'MPUIKit', :path => '../'
+  # Pods for MPUIKit_example
+
+	pod "MPUIKit", :path => "../"
 
 end

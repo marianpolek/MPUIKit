@@ -1,0 +1,6 @@
+framework module Pods_MPUIKit_example {
+  umbrella header "Pods-MPUIKit_example-umbrella.h"
+
+  export *
+  module * { export * }
+}
