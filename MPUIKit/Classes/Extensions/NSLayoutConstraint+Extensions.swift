@@ -77,4 +77,14 @@ public extension NSLayoutConstraint {
         const.priority = priority
         return const
     }
+    
+    static func centerX(to item: UIView, secondItem: UIView, multiplier: CGFloat = 1) -> NSLayoutConstraint {
+        
+        return NSLayoutConstraint(item: item, attribute: .centerX, relatedBy: .equal, toItem: secondItem, attribute: .centerX, multiplier: multiplier, constant: 0)
+    }
+    
+    static func centerY(to item: UIView, secondItem: UIView, multiplier: CGFloat = 1) -> NSLayoutConstraint {
+        
+        return NSLayoutConstraint(item: item, attribute: .centerY, relatedBy: .equal, toItem: secondItem, attribute: .centerY, multiplier: multiplier, constant: 0)
+    }
 }

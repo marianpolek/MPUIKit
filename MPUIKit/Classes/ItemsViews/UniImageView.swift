@@ -49,8 +49,8 @@ open class UniImageView: UIView, UniViewWithInsets {
                 imageView.leadingAnchor.constraint(greaterThanOrEqualTo: self.leadingAnchor, constant: insets.left),
                 self.trailingAnchor.constraint(greaterThanOrEqualTo: imageView.trailingAnchor, constant: -insets.right),
                 self.bottomAnchor.constraint(greaterThanOrEqualTo: imageView.bottomAnchor, constant: -insets.bottom),
-                NSLayoutConstraint(item: imageView, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0),
-                NSLayoutConstraint(item: imageView, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0)
+                NSLayoutConstraint.centerX(to: imageView, secondItem: self),
+                NSLayoutConstraint.centerY(to: imageView, secondItem: self)
             ]
         )
     }

@@ -37,8 +37,8 @@ open class UniLoadingView: UIView, UniViewWithInsets {
         self.addSubview(loadingIndicator)
         NSLayoutConstraint.activate(
             [
-                NSLayoutConstraint(item: loadingIndicator, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0),
-                NSLayoutConstraint(item: loadingIndicator, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0)
+                NSLayoutConstraint.centerX(to: loadingIndicator, secondItem: self),
+                NSLayoutConstraint.centerY(to: loadingIndicator, secondItem: self)
             ]
         )
     }
