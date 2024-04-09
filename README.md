@@ -20,4 +20,5 @@ Features:
 - preparation for pagination for tablesViews
 - preparation for top banners
 - preparation for bottom snackbars
+- preparation for skins
 - etc..

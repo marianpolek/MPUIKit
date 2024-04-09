@@ -13,14 +13,16 @@ open class UniSeparatorView: UIView, UniViewWithInsets {
     
     public var insets: UIEdgeInsets
 
-    public init(insets: UIEdgeInsets = UIEdgeInsets.zero) {
+    public init(backgroundColor: UIColor = .gray,
+                height: CGFloat = 1,
+                insets: UIEdgeInsets = UIEdgeInsets.zero) {
         self.insets = insets
         super.init(frame: CGRect.basic)
         
         let view = UIView()
         
-        view.backgroundColor = .gray
-        view.setHeight(1)
+        view.backgroundColor = backgroundColor
+        view.setHeight(height)
         
         self.embed(view, insets: self.insets)
         

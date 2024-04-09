@@ -62,6 +62,8 @@ open class UniNotificationBanner: UIView, UniViewWithInsets {
     }
 
     public init(frame: CGRect,
+                viewSkin: UIView.Skin = .whiteFlat(),
+                titleSkin: UILabel.Skin = .black16(),
                 snackBarBottomSpace: CGFloat = 20,
                 topBarTopSpace: CGFloat = 0,
                 showFromTop: Bool,
@@ -82,10 +84,11 @@ open class UniNotificationBanner: UIView, UniViewWithInsets {
         let stackView = UIStackView(frame: .basic).axis(.horizontal).setHeight(28)
         stackView.spacing = 10
         
-        self.leftImage = UIImageView(frame: .basic).setWidth(30).setHeight(30)
+        self.leftImage = UIImageView(frame: .basic).setWidth(24).setHeight(24)
         self.label = UILabel(frame: .basic)
-        self.label.numberOfLines = 2
-        self.rightImage = UIImageView(frame: .basic).setWidth(30).setHeight(30)
+        self.label.numberOfLines = 0
+        self.label.apply(skin: titleSkin)
+        self.rightImage = UIImageView(frame: .basic).setWidth(24).setHeight(24)
         self.closeButton = UIButton()
         
         stackView.addArrangedSubview(leftImage)
@@ -97,6 +100,9 @@ open class UniNotificationBanner: UIView, UniViewWithInsets {
         self.closeButton.addTarget(self, action: #selector(closeButtonTap(_:)), for: .touchUpInside)
 
         self.embed(stackView, insets: self.insets)
+        
+        self.apply(skin: viewSkin)
+        
         initAppearance()
     }
     

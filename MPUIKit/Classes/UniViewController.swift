@@ -338,9 +338,9 @@ open class UniViewController: UIViewController {
                     let bannerChipView = self?.wholeScreenStackView.getBannerView() ?? UniNotificationBanner(frame: .basic, showFromTop: true)
 //                    bannerChipView.apply(skin: config.skin)
                     if let image = config.icon {
-//                        bannerChipView.leftImage(image: config.icon, width: 24, height: 24)
+                        bannerChipView.leftImage(image: config.icon, width: 24, height: 24)
                     }
-//                    bannerChipView.text = config.title
+                    bannerChipView.text = config.title
                     
                     self?.wholeScreenStackView.addBannerView(bannerChipView, tableView: self?.tableView)
                 }
@@ -351,7 +351,7 @@ open class UniViewController: UIViewController {
         }
         
         viewModel?.output.showSnackBar = { [weak self] text in
-            self?.showSnackBar(with: text)
+            self?.showSnackBar(with: text, viewSkin: .blackCorner10(), titleSkin: .white16())
         }
         
         viewModel?.output.showViewFullScreen = { [weak self] view in

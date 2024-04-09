@@ -10,7 +10,11 @@ import UIKit
 
 extension UIViewController {
     
-    public func showSnackBar(with text: String, image: UIImage? = UIImage.init(systemName: "info.circle"), bottomSpace: CGFloat = 0) {
+    public func showSnackBar(with text: String,
+                             viewSkin: UIView.Skin = .whiteFlat(),
+                             titleSkin: UILabel.Skin = .black16(),
+                             image: UIImage? = UIImage.init(systemName: "info.circle"),
+                             bottomSpace: CGFloat = 0) {
         
         let snackBarStartingPosition = UIScreen.main.bounds.maxY
         let snackBarHeight: CGFloat = 56
@@ -26,7 +30,9 @@ extension UIViewController {
                 y: snackBarStartingPosition,
                 width: snackBarWidth,
                 height: snackBarHeight
-            ),
+            ), 
+            viewSkin: viewSkin,
+            titleSkin: titleSkin,
             snackBarBottomSpace: snackBarBottomSpace
         )
         snackBar.text = text

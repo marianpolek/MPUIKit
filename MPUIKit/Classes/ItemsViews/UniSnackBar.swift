@@ -10,9 +10,15 @@ import Foundation
 final public class UniSnackBar: UniNotificationBanner {
 
     public init(frame: CGRect,
+                viewSkin: UIView.Skin = .whiteFlat(),
+                titleSkin: UILabel.Skin = .black16(),
                 snackBarBottomSpace: CGFloat = 20) {
         
-        super.init(frame: frame, showFromTop: false, automaticallyHide: true)
+        super.init(frame: frame,
+                   viewSkin: viewSkin,
+                   titleSkin: titleSkin,
+                   showFromTop: false,
+                   automaticallyHide: true)
     }
     
     public required init?(coder aDecoder: NSCoder) {

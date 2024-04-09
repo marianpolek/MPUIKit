@@ -7,42 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EEC7A706604990334916C0A9805CC73 /* MPUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE0B32F087977CB6F2BDC25A550DE03 /* MPUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0986494FB8583721F72E074F5E061D8A /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BADBFE26431B4FB99A847E6308F72AD /* UITableView+Extensions.swift */; };
 		1292809C648CC324DD99A9B0F3A13A7E /* Pods-MPUIKit_example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF7A9FC75637FBE5C6FEB2F2395DB8 /* Pods-MPUIKit_example-dummy.m */; };
-		1299B2DABC6BC3C06A80DCFD7A7B08EF /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B6743456ED74CF2E013BDFE3278521 /* UITableView+Extensions.swift */; };
-		19678A99C1D550EBCFD602C3DC8A3EAC /* ShimmerTitleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64A4B4FDC7F48387E63DFD3C45CE3B /* ShimmerTitleLoadingView.swift */; };
-		1D12277794FD41A7C241C7ED0842C1F7 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B91263642D5BDEDBA2088324A87EB /* Date+Extensions.swift */; };
-		249993C9F5D58B52D16CD257B85334F0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1EB3DE4C427E508C9E53F8B3FAFD4B /* UIViewController+Extensions.swift */; };
-		2CE194563F15A205507FB8147E17E307 /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA355B7C69AFDB9AAE5312B055E41998 /* NSLayoutConstraint+Extensions.swift */; };
-		467E9E0B2BC4594400C57692 /* UniSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467E9E0A2BC4594400C57692 /* UniSnackBar.swift */; };
-		4C3DFCAAED98CF87EEC30700CF56C330 /* UniImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FBEB1FE8C3163D9F63F6E89FCAF362 /* UniImageView.swift */; };
-		4F659F7B9A7326D70B929098ED4F5ADD /* UniTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913732E2F6BF9B8DE49B537F6DBD3B0 /* UniTextFieldView.swift */; };
-		6619AAAE499191B00B2680E18F914E0C /* UniTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4013FA138D325204FA09F82CE931C4 /* UniTitleView.swift */; };
-		6B90C8B44A999CF2F28A278311E505C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		71E823BAA1DD344D50E668BD676221CB /* PaginationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4148DA5AB2E0442109920F435820039 /* PaginationManager.swift */; };
+		2AB099C125D5E9F1B459E4B15F5E5673 /* ShimmerTitleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0697014041E17F74EDCC07457BD3FC /* ShimmerTitleLoadingView.swift */; };
+		2B39F7DE596CE126426FFDBC56EB7982 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D9A2F1A6DE67CF1AE5C3543AB1F93C /* UIStackView+Extensions.swift */; };
+		3ED9E7A38DC0FA3EE46D793CEE23EEB3 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A61A9A1E2E760CB8F3C1F1A082D2285 /* CGRect+Extensions.swift */; };
+		446F5DA88B2F5A11CF3DFB1C0AF0FDE9 /* UniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E94EFC19A085C474F819FEBE467AEA /* UniViewController.swift */; };
+		45EFCF78E3D9A7383C3CF4F293890ED8 /* UniStackViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD03D1DE980BCB1288329AEA45513C3 /* UniStackViewView.swift */; };
+		46CC27832BC5BA4C00C010C3 /* UILabel+Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC27822BC5BA4C00C010C3 /* UILabel+Skin.swift */; };
+		4D95615F73C737D7C4619157C2B35704 /* UniNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9EFD8ABC2076EBE1FA7BFD2EC10794 /* UniNotificationBanner.swift */; };
+		4FE604EFB480C7287486AC77187A895B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1B7411A5C9B516DB05E1C3BD43671 /* UIViewController+Extensions.swift */; };
+		509F1896E36209458DA03BF611973DD7 /* UniButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F914ED06B1B45092DB7DCC055F2C64 /* UniButtonView.swift */; };
+		527A13E80220C110E32701AFD13E7FDF /* UniViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586D26219534E281F5D76F6226E0F13 /* UniViewModelBase.swift */; };
+		543BD6E6A3905B55B4398089FDFD20D7 /* UniSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286D51F6B5F2C2ACE5BC94547E785098 /* UniSnackBar.swift */; };
+		5C4C729EB414A794F1081E0FA35EEF6D /* UniSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF4F878ED9414CFC5349285352770E /* UniSeparatorView.swift */; };
+		650BA70DB375F9951759401BFB64F92D /* UniTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632AFCA3199D80FF812402ECBE0B4B79 /* UniTableViewCell.swift */; };
+		65FADBEAAC76CD53FE82070BD75557DF /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157638A1B9DC8FB39222DBB70034B4AB /* Protocols.swift */; };
+		71DD3AC0DB31A96BB1380EBD565D8D49 /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4EADA114F67D71171105B2C123709C /* UINavigationItem+Extensions.swift */; };
+		73F0CA215CF29B399AD4FB086D6B7A0E /* MPUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD0D796017D0BAEC57179E53DBF28B6 /* MPUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74533D2EF6117453321CC5D0BF6E9EBE /* UIView+Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922D18F664AC342EA56636C99488E668 /* UIView+Skin.swift */; };
 		75C42BC565BA9EB239D89DAB11FF4C56 /* Pods-MPUIKit_example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0276B8CCA86DA44E9466140017E974 /* Pods-MPUIKit_example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8572591DEF07B77A6D04336663C47636 /* UniViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90281DCCB9EA153C0C43DECF3A01BA4F /* UniViewModelBase.swift */; };
-		8D53C74AE1C79AF5EAD97BE9F8AA1A68 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9967AA3701792572B560267B60C6D792 /* CGRect+Extensions.swift */; };
-		9AC49B3ABABCEC1B26EAF0BD0E92C5AA /* UniButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10E30B8E6AD3A9E164F32ED7D65035 /* UniButtonView.swift */; };
-		9CC7C33480A78B3619F7155345350DF5 /* UniStackViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF34B323C9B29028356AF9A7BF14D7E3 /* UniStackViewView.swift */; };
-		9D24DD43758B5E6C78748A6B81AFC745 /* ViewWithOutboundsButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA16CDE784961F137486594063E2FEA /* ViewWithOutboundsButtons.swift */; };
-		9F521A1E28B2A1D7A9EF850CE9C8A591 /* UniTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D097F2C7588F6184C8F9CE76B41766 /* UniTableViewCell.swift */; };
+		77F42D8D7BCD67BD603AE136A551C797 /* MPUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29507F7B7EE53A45B0AF02AD86B58D25 /* MPUIKit-dummy.m */; };
+		8F1B6006813083402209E261C7199553 /* PaginationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0831183B93D6F25FE56820176D357087 /* PaginationManager.swift */; };
+		94329582EA32274A4796F86D9D5CDC07 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F6A6CA695F876568BD484912CFD12E /* BaseViewModel.swift */; };
 		A6982BD76F9A29FE6104C592D097A8F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A7B9D5FFE9914D642F64773C58A0AC56 /* MPUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25204740F10A01E3D6AC28E2427B9DF1 /* MPUIKit-dummy.m */; };
-		BE5AC7FEDADE5FB69408C47B76B57A92 /* UniLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B575584E680EBF8D93984F25C469FB /* UniLoadingView.swift */; };
-		C4797BB5A89D3319BCDDAFB231221893 /* UniNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C6DE38106704547E9DB5C4E5EEEC /* UniNotificationBanner.swift */; };
-		CD53C85345F9B38C4D54E13B65B8D46B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D65447890624EE8356AA008830DC261 /* Protocols.swift */; };
-		D3369FEB0D5BA1D9BBACBF381F57E530 /* UINavigationItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DE217419934CEF0DE1ECCE4877DCFF /* UINavigationItem+Extensions.swift */; };
-		D49A0377490560240D3753A39069F8AE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBAFDE238A2A6CA6CCAFB19F3F5D42 /* UIView+Extensions.swift */; };
-		E2FCAE0BC7EE019D2D01A39C7E5B9CB7 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF162595F73113778B03E5F4C882F0 /* BaseViewModel.swift */; };
-		E35619F7B5CA09FD0E4298E7C684B289 /* UniSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062225C29F2E03BBE176BCE09364740 /* UniSeparatorView.swift */; };
-		E762405C72CB105295B76E503B7DDFAA /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85159072889BA2AA8E714CE2B5E7545 /* UIEdgeInsets+Extensions.swift */; };
-		F66D314EF8CCB4B2A1F2AA6DFAE4AB58 /* UniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD9A8D4BAFF6A1B9FB83D236D98378 /* UniViewController.swift */; };
-		F7D7F007689EE04BE5127FDF408802F8 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB0A76507BC731B547998832B5EC3C /* UIStackView+Extensions.swift */; };
+		B3D2AFCEE7DF779E5C0A5B7D869E6587 /* UniTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F09F3B383E8B17DAB2DEF24BCFE29 /* UniTitleView.swift */; };
+		BF0962258E46C4F5268354E3B41D87BD /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83FAF139D436AFC3565A78180257AE /* NSLayoutConstraint+Extensions.swift */; };
+		C05E62F35F13DE5CD854BFCE5F76222E /* ViewWithOutboundsButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EAEF09BE911D437D2FA4CDA3672557 /* ViewWithOutboundsButtons.swift */; };
+		C132625FEA776C23C632B77F8C8EBDA9 /* UniTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F7FB10AAD3150CEE58A6E3F0E9DA4 /* UniTextFieldView.swift */; };
+		D60173C98C0897C88DF9E02171DABFA7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B65CF1AD2A0351432F3194C468A97 /* UIView+Extensions.swift */; };
+		D6949A50CCA64AF67627874A2474A1A0 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55F9F7F17BE53BF4CE25F43B04015A /* Date+Extensions.swift */; };
+		E1F72552F9C5AB69AF6E41A805BBDEE3 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394919B7EF73CB61B540C95D460D9BA8 /* UIEdgeInsets+Extensions.swift */; };
+		E329803ADD20EEC8EC6821D50321746C /* UniImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED4350BA1FC86F2EDA9ED79A7A2100 /* UniImageView.swift */; };
+		E8EA091598E81CD61212522E63EF2999 /* UniLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA98F04862F5E2C369B57AE1866CF77 /* UniLoadingView.swift */; };
+		F13BF526B2FA6CD71358F9AF8A08A5CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8CD32115349C262B89505AC4EDFC7A3E /* PBXContainerItemProxy */ = {
+		CD29EBCFDF26FF68285B0726E5A01FF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -52,55 +54,57 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00F914ED06B1B45092DB7DCC055F2C64 /* UniButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniButtonView.swift; sourceTree = "<group>"; };
+		03F6A6CA695F876568BD484912CFD12E /* BaseViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		0831183B93D6F25FE56820176D357087 /* PaginationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaginationManager.swift; sourceTree = "<group>"; };
 		0A426487992D870A60E9BCACADC9974B /* Pods-MPUIKit_example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MPUIKit_example-frameworks.sh"; sourceTree = "<group>"; };
-		1913732E2F6BF9B8DE49B537F6DBD3B0 /* UniTextFieldView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniTextFieldView.swift; sourceTree = "<group>"; };
-		218093DDFB2F7B795A4DAF94271C3500 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		21B6743456ED74CF2E013BDFE3278521 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		0A55F9F7F17BE53BF4CE25F43B04015A /* Date+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		157638A1B9DC8FB39222DBB70034B4AB /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = MPUIKit/Classes/Protocols.swift; sourceTree = "<group>"; };
+		15ED4350BA1FC86F2EDA9ED79A7A2100 /* UniImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniImageView.swift; sourceTree = "<group>"; };
 		21BCD27B154E03939E3EC5D4493CB775 /* Pods-MPUIKit_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MPUIKit_example.release.xcconfig"; sourceTree = "<group>"; };
-		25204740F10A01E3D6AC28E2427B9DF1 /* MPUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPUIKit-dummy.m"; sourceTree = "<group>"; };
-		2D64A4B4FDC7F48387E63DFD3C45CE3B /* ShimmerTitleLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShimmerTitleLoadingView.swift; sourceTree = "<group>"; };
-		3129C6DE38106704547E9DB5C4E5EEEC /* UniNotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniNotificationBanner.swift; sourceTree = "<group>"; };
+		286D51F6B5F2C2ACE5BC94547E785098 /* UniSnackBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniSnackBar.swift; sourceTree = "<group>"; };
+		29507F7B7EE53A45B0AF02AD86B58D25 /* MPUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPUIKit-dummy.m"; sourceTree = "<group>"; };
+		2C83FAF139D436AFC3565A78180257AE /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
+		33D5B1AEA85A806D5BCC8FCDC53FDFBE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		35500F569704010FAAFF0A0CA77F00FB /* Pods-MPUIKit_example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MPUIKit_example.debug.xcconfig"; sourceTree = "<group>"; };
-		3DA16CDE784961F137486594063E2FEA /* ViewWithOutboundsButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewWithOutboundsButtons.swift; sourceTree = "<group>"; };
-		3FCD9A8D4BAFF6A1B9FB83D236D98378 /* UniViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UniViewController.swift; path = MPUIKit/Classes/UniViewController.swift; sourceTree = "<group>"; };
-		457B91263642D5BDEDBA2088324A87EB /* Date+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
-		467E9E0A2BC4594400C57692 /* UniSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniSnackBar.swift; sourceTree = "<group>"; };
-		48C2E5EC533515D87E0BC3186EA8E7D8 /* MPUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPUIKit.debug.xcconfig; sourceTree = "<group>"; };
-		4AC9F9524FEF55F6D75618AE4D3E9A8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		4C10E30B8E6AD3A9E164F32ED7D65035 /* UniButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniButtonView.swift; sourceTree = "<group>"; };
-		4D1EB3DE4C427E508C9E53F8B3FAFD4B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		4D65447890624EE8356AA008830DC261 /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = MPUIKit/Classes/Protocols.swift; sourceTree = "<group>"; };
+		36335842C6555263C16B8D8C27D0AD2B /* MPUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPUIKit-prefix.pch"; sourceTree = "<group>"; };
+		394919B7EF73CB61B540C95D460D9BA8 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
+		3DD58D43DEFF4C19F72ACC60436162C1 /* MPUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MPUIKit.modulemap; sourceTree = "<group>"; };
+		41E0F8611D20FF5D96FD835DC7C5E274 /* MPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MPUIKit-Info.plist"; sourceTree = "<group>"; };
+		44D9A2F1A6DE67CF1AE5C3543AB1F93C /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		46CC27822BC5BA4C00C010C3 /* UILabel+Skin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Skin.swift"; sourceTree = "<group>"; };
+		48EAEF09BE911D437D2FA4CDA3672557 /* ViewWithOutboundsButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewWithOutboundsButtons.swift; sourceTree = "<group>"; };
 		4DE90EC3C98658348CAB746E5C823C4F /* Pods-MPUIKit_example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MPUIKit_example-Info.plist"; sourceTree = "<group>"; };
-		53FF162595F73113778B03E5F4C882F0 /* BaseViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		5AD2C745F6C40734C8D48B2CAA3494D6 /* Pods-MPUIKit_example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MPUIKit_example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		67CBAFDE238A2A6CA6CCAFB19F3F5D42 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		68DB0A76507BC731B547998832B5EC3C /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		5BD03D1DE980BCB1288329AEA45513C3 /* UniStackViewView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniStackViewView.swift; sourceTree = "<group>"; };
+		5CD1B7411A5C9B516DB05E1C3BD43671 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		632AFCA3199D80FF812402ECBE0B4B79 /* UniTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniTableViewCell.swift; sourceTree = "<group>"; };
+		64791922A910E75DD02E7A1EB59DB9E4 /* MPUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPUIKit.release.xcconfig; sourceTree = "<group>"; };
+		6BADBFE26431B4FB99A847E6308F72AD /* UITableView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		74FBEB1FE8C3163D9F63F6E89FCAF362 /* UniImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniImageView.swift; sourceTree = "<group>"; };
-		7CE0B32F087977CB6F2BDC25A550DE03 /* MPUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPUIKit-umbrella.h"; sourceTree = "<group>"; };
-		80DE217419934CEF0DE1ECCE4877DCFF /* UINavigationItem+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extensions.swift"; sourceTree = "<group>"; };
+		8A61A9A1E2E760CB8F3C1F1A082D2285 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
 		8BEE30B4F3E6FCD9D8F5424BBE8D63BC /* MPUIKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MPUIKit; path = MPUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90281DCCB9EA153C0C43DECF3A01BA4F /* UniViewModelBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UniViewModelBase.swift; path = MPUIKit/Classes/UniViewModelBase.swift; sourceTree = "<group>"; };
-		9967AA3701792572B560267B60C6D792 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
-		9B7818C78CC838179546434B6271B2CF /* MPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MPUIKit-Info.plist"; sourceTree = "<group>"; };
-		9D8C8AB3D7DBB18CB1317698283CE2EA /* MPUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPUIKit-prefix.pch"; sourceTree = "<group>"; };
+		90FF4F878ED9414CFC5349285352770E /* UniSeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniSeparatorView.swift; sourceTree = "<group>"; };
+		922D18F664AC342EA56636C99488E668 /* UIView+Skin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Skin.swift"; sourceTree = "<group>"; };
+		963B65CF1AD2A0351432F3194C468A97 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		969F09F3B383E8B17DAB2DEF24BCFE29 /* UniTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniTitleView.swift; sourceTree = "<group>"; };
+		9A4EADA114F67D71171105B2C123709C /* UINavigationItem+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extensions.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0B575584E680EBF8D93984F25C469FB /* UniLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniLoadingView.swift; sourceTree = "<group>"; };
-		B4148DA5AB2E0442109920F435820039 /* PaginationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaginationManager.swift; sourceTree = "<group>"; };
+		A6C5505D10944EF7552737043A9969C2 /* MPUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPUIKit.debug.xcconfig; sourceTree = "<group>"; };
+		B586D26219534E281F5D76F6226E0F13 /* UniViewModelBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UniViewModelBase.swift; path = MPUIKit/Classes/UniViewModelBase.swift; sourceTree = "<group>"; };
 		B8179A6D1452F8164A3DE75200C3CDB2 /* Pods-MPUIKit_example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MPUIKit_example-acknowledgements.plist"; sourceTree = "<group>"; };
-		BCAF5637C9D507112CCCBB387D624AE3 /* MPUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MPUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C7FD712BAB899A8ACD242AA7F96E3EE8 /* MPUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPUIKit.release.xcconfig; sourceTree = "<group>"; };
-		C8D097F2C7588F6184C8F9CE76B41766 /* UniTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniTableViewCell.swift; sourceTree = "<group>"; };
-		D062225C29F2E03BBE176BCE09364740 /* UniSeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniSeparatorView.swift; sourceTree = "<group>"; };
+		C2DCD3AFA4B10408644F8B8339C91BD8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA8E732A211875F90C3D094C4C271821 /* MPUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MPUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DA9EFD8ABC2076EBE1FA7BFD2EC10794 /* UniNotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniNotificationBanner.swift; sourceTree = "<group>"; };
 		DABF7A9FC75637FBE5C6FEB2F2395DB8 /* Pods-MPUIKit_example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MPUIKit_example-dummy.m"; sourceTree = "<group>"; };
 		DF0276B8CCA86DA44E9466140017E974 /* Pods-MPUIKit_example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MPUIKit_example-umbrella.h"; sourceTree = "<group>"; };
-		DF34B323C9B29028356AF9A7BF14D7E3 /* UniStackViewView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniStackViewView.swift; sourceTree = "<group>"; };
+		DF0697014041E17F74EDCC07457BD3FC /* ShimmerTitleLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShimmerTitleLoadingView.swift; sourceTree = "<group>"; };
+		E4E94EFC19A085C474F819FEBE467AEA /* UniViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UniViewController.swift; path = MPUIKit/Classes/UniViewController.swift; sourceTree = "<group>"; };
 		E69000081E82F1F6207917F86D6416D4 /* Pods-MPUIKit_example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MPUIKit_example"; path = Pods_MPUIKit_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E85159072889BA2AA8E714CE2B5E7545 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
-		EA355B7C69AFDB9AAE5312B055E41998 /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
-		EDCAD5F3C55A4209BE3CC34E50F0F8CF /* MPUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MPUIKit.modulemap; sourceTree = "<group>"; };
-		EE4013FA138D325204FA09F82CE931C4 /* UniTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniTitleView.swift; sourceTree = "<group>"; };
+		EEA98F04862F5E2C369B57AE1866CF77 /* UniLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniLoadingView.swift; sourceTree = "<group>"; };
+		EF8F7FB10AAD3150CEE58A6E3F0E9DA4 /* UniTextFieldView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniTextFieldView.swift; sourceTree = "<group>"; };
 		F6787D3293E37324EFF4B412957728A8 /* Pods-MPUIKit_example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MPUIKit_example.modulemap"; sourceTree = "<group>"; };
+		FDD0D796017D0BAEC57179E53DBF28B6 /* MPUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPUIKit-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,17 +116,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F02FEBDFF0478907B6132D3C05B9996 /* Frameworks */ = {
+		DF3C6ED317DD4751FE6DDC5E7CA6F586 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B90C8B44A999CF2F28A278311E505C4 /* Foundation.framework in Frameworks */,
+				F13BF526B2FA6CD71358F9AF8A08A5CF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0065E6588F65262D0F69DF906B9B96AE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				03F6A6CA695F876568BD484912CFD12E /* BaseViewModel.swift */,
+				0831183B93D6F25FE56820176D357087 /* PaginationManager.swift */,
+			);
+			name = Common;
+			path = MPUIKit/Classes/Common;
+			sourceTree = "<group>";
+		};
 		0720636353CB0FE7E7842C266F0D3E7C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,30 +154,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38992F117C97179E5FE6855AE8DB5A18 /* ItemsViews */ = {
+		23FA7A24CD84D2338DEBCA4399B57A91 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3129C6DE38106704547E9DB5C4E5EEEC /* UniNotificationBanner.swift */,
-				2D64A4B4FDC7F48387E63DFD3C45CE3B /* ShimmerTitleLoadingView.swift */,
-				4C10E30B8E6AD3A9E164F32ED7D65035 /* UniButtonView.swift */,
-				74FBEB1FE8C3163D9F63F6E89FCAF362 /* UniImageView.swift */,
-				A0B575584E680EBF8D93984F25C469FB /* UniLoadingView.swift */,
-				D062225C29F2E03BBE176BCE09364740 /* UniSeparatorView.swift */,
-				DF34B323C9B29028356AF9A7BF14D7E3 /* UniStackViewView.swift */,
-				C8D097F2C7588F6184C8F9CE76B41766 /* UniTableViewCell.swift */,
-				1913732E2F6BF9B8DE49B537F6DBD3B0 /* UniTextFieldView.swift */,
-				EE4013FA138D325204FA09F82CE931C4 /* UniTitleView.swift */,
-				3DA16CDE784961F137486594063E2FEA /* ViewWithOutboundsButtons.swift */,
-				467E9E0A2BC4594400C57692 /* UniSnackBar.swift */,
+				8A61A9A1E2E760CB8F3C1F1A082D2285 /* CGRect+Extensions.swift */,
+				0A55F9F7F17BE53BF4CE25F43B04015A /* Date+Extensions.swift */,
+				2C83FAF139D436AFC3565A78180257AE /* NSLayoutConstraint+Extensions.swift */,
+				394919B7EF73CB61B540C95D460D9BA8 /* UIEdgeInsets+Extensions.swift */,
+				9A4EADA114F67D71171105B2C123709C /* UINavigationItem+Extensions.swift */,
+				44D9A2F1A6DE67CF1AE5C3543AB1F93C /* UIStackView+Extensions.swift */,
+				6BADBFE26431B4FB99A847E6308F72AD /* UITableView+Extensions.swift */,
+				963B65CF1AD2A0351432F3194C468A97 /* UIView+Extensions.swift */,
+				5CD1B7411A5C9B516DB05E1C3BD43671 /* UIViewController+Extensions.swift */,
 			);
-			name = ItemsViews;
-			path = MPUIKit/Classes/ItemsViews;
+			name = Extensions;
+			path = MPUIKit/Classes/Extensions;
 			sourceTree = "<group>";
 		};
-		4AC320F58C46E8A0A7C14D94FF2BACE3 /* Development Pods */ = {
+		4838831CE97ADB069ADEB33A672A4CFE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				84A6162BA6DBF5507C03549C8CD69117 /* MPUIKit */,
+				843C896D3E5FE2E73C33505E3F6F9A4C /* MPUIKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -174,16 +185,6 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		695DD21156A3932010B662AB60928787 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				4AC9F9524FEF55F6D75618AE4D3E9A8F /* LICENSE */,
-				BCAF5637C9D507112CCCBB387D624AE3 /* MPUIKit.podspec */,
-				218093DDFB2F7B795A4DAF94271C3500 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		70FD63038D20F51ED1B054E115F6968A /* Pods-MPUIKit_example */ = {
@@ -203,69 +204,38 @@
 			path = "Target Support Files/Pods-MPUIKit_example";
 			sourceTree = "<group>";
 		};
-		7611B3ED24A9E4B8AB219B4FABB6564A /* Common */ = {
+		843C896D3E5FE2E73C33505E3F6F9A4C /* MPUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				53FF162595F73113778B03E5F4C882F0 /* BaseViewModel.swift */,
-				B4148DA5AB2E0442109920F435820039 /* PaginationManager.swift */,
-			);
-			name = Common;
-			path = MPUIKit/Classes/Common;
-			sourceTree = "<group>";
-		};
-		7E78EDF5C6002CE21370AD47B4F3577F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				9967AA3701792572B560267B60C6D792 /* CGRect+Extensions.swift */,
-				457B91263642D5BDEDBA2088324A87EB /* Date+Extensions.swift */,
-				EA355B7C69AFDB9AAE5312B055E41998 /* NSLayoutConstraint+Extensions.swift */,
-				E85159072889BA2AA8E714CE2B5E7545 /* UIEdgeInsets+Extensions.swift */,
-				80DE217419934CEF0DE1ECCE4877DCFF /* UINavigationItem+Extensions.swift */,
-				68DB0A76507BC731B547998832B5EC3C /* UIStackView+Extensions.swift */,
-				21B6743456ED74CF2E013BDFE3278521 /* UITableView+Extensions.swift */,
-				67CBAFDE238A2A6CA6CCAFB19F3F5D42 /* UIView+Extensions.swift */,
-				4D1EB3DE4C427E508C9E53F8B3FAFD4B /* UIViewController+Extensions.swift */,
-			);
-			name = Extensions;
-			path = MPUIKit/Classes/Extensions;
-			sourceTree = "<group>";
-		};
-		84A6162BA6DBF5507C03549C8CD69117 /* MPUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				4D65447890624EE8356AA008830DC261 /* Protocols.swift */,
-				3FCD9A8D4BAFF6A1B9FB83D236D98378 /* UniViewController.swift */,
-				90281DCCB9EA153C0C43DECF3A01BA4F /* UniViewModelBase.swift */,
-				7611B3ED24A9E4B8AB219B4FABB6564A /* Common */,
-				7E78EDF5C6002CE21370AD47B4F3577F /* Extensions */,
-				38992F117C97179E5FE6855AE8DB5A18 /* ItemsViews */,
-				695DD21156A3932010B662AB60928787 /* Pod */,
-				A8DC89ED3094C022FF0801A35993B744 /* Support Files */,
+				157638A1B9DC8FB39222DBB70034B4AB /* Protocols.swift */,
+				E4E94EFC19A085C474F819FEBE467AEA /* UniViewController.swift */,
+				B586D26219534E281F5D76F6226E0F13 /* UniViewModelBase.swift */,
+				0065E6588F65262D0F69DF906B9B96AE /* Common */,
+				23FA7A24CD84D2338DEBCA4399B57A91 /* Extensions */,
+				F1F7617AFA8FD2BDC32C66BA4B814C90 /* ItemsViews */,
+				A7939FF6EAFD1B1708551E41F0AE99BF /* ItemsViewsSkins */,
+				FD410726EC7798EA970A8BEC1358A88B /* Pod */,
+				ECF1747320408C8E6707D2C5C1A52AC0 /* Support Files */,
 			);
 			name = MPUIKit;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		A8DC89ED3094C022FF0801A35993B744 /* Support Files */ = {
+		A7939FF6EAFD1B1708551E41F0AE99BF /* ItemsViewsSkins */ = {
 			isa = PBXGroup;
 			children = (
-				EDCAD5F3C55A4209BE3CC34E50F0F8CF /* MPUIKit.modulemap */,
-				25204740F10A01E3D6AC28E2427B9DF1 /* MPUIKit-dummy.m */,
-				9B7818C78CC838179546434B6271B2CF /* MPUIKit-Info.plist */,
-				9D8C8AB3D7DBB18CB1317698283CE2EA /* MPUIKit-prefix.pch */,
-				7CE0B32F087977CB6F2BDC25A550DE03 /* MPUIKit-umbrella.h */,
-				48C2E5EC533515D87E0BC3186EA8E7D8 /* MPUIKit.debug.xcconfig */,
-				C7FD712BAB899A8ACD242AA7F96E3EE8 /* MPUIKit.release.xcconfig */,
+				922D18F664AC342EA56636C99488E668 /* UIView+Skin.swift */,
+				46CC27822BC5BA4C00C010C3 /* UILabel+Skin.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MPUIKit";
+			name = ItemsViewsSkins;
+			path = MPUIKit/Classes/ItemsViewsSkins;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				4AC320F58C46E8A0A7C14D94FF2BACE3 /* Development Pods */,
+				4838831CE97ADB069ADEB33A672A4CFE /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				1EA680C2761C0BEBC54CB6993124774B /* Products */,
 				0720636353CB0FE7E7842C266F0D3E7C /* Targets Support Files */,
@@ -280,22 +250,67 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ECF1747320408C8E6707D2C5C1A52AC0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DD58D43DEFF4C19F72ACC60436162C1 /* MPUIKit.modulemap */,
+				29507F7B7EE53A45B0AF02AD86B58D25 /* MPUIKit-dummy.m */,
+				41E0F8611D20FF5D96FD835DC7C5E274 /* MPUIKit-Info.plist */,
+				36335842C6555263C16B8D8C27D0AD2B /* MPUIKit-prefix.pch */,
+				FDD0D796017D0BAEC57179E53DBF28B6 /* MPUIKit-umbrella.h */,
+				A6C5505D10944EF7552737043A9969C2 /* MPUIKit.debug.xcconfig */,
+				64791922A910E75DD02E7A1EB59DB9E4 /* MPUIKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MPUIKit";
+			sourceTree = "<group>";
+		};
+		F1F7617AFA8FD2BDC32C66BA4B814C90 /* ItemsViews */ = {
+			isa = PBXGroup;
+			children = (
+				DF0697014041E17F74EDCC07457BD3FC /* ShimmerTitleLoadingView.swift */,
+				00F914ED06B1B45092DB7DCC055F2C64 /* UniButtonView.swift */,
+				15ED4350BA1FC86F2EDA9ED79A7A2100 /* UniImageView.swift */,
+				EEA98F04862F5E2C369B57AE1866CF77 /* UniLoadingView.swift */,
+				DA9EFD8ABC2076EBE1FA7BFD2EC10794 /* UniNotificationBanner.swift */,
+				90FF4F878ED9414CFC5349285352770E /* UniSeparatorView.swift */,
+				286D51F6B5F2C2ACE5BC94547E785098 /* UniSnackBar.swift */,
+				5BD03D1DE980BCB1288329AEA45513C3 /* UniStackViewView.swift */,
+				632AFCA3199D80FF812402ECBE0B4B79 /* UniTableViewCell.swift */,
+				EF8F7FB10AAD3150CEE58A6E3F0E9DA4 /* UniTextFieldView.swift */,
+				969F09F3B383E8B17DAB2DEF24BCFE29 /* UniTitleView.swift */,
+				48EAEF09BE911D437D2FA4CDA3672557 /* ViewWithOutboundsButtons.swift */,
+			);
+			name = ItemsViews;
+			path = MPUIKit/Classes/ItemsViews;
+			sourceTree = "<group>";
+		};
+		FD410726EC7798EA970A8BEC1358A88B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				33D5B1AEA85A806D5BCC8FCDC53FDFBE /* LICENSE */,
+				DA8E732A211875F90C3D094C4C271821 /* MPUIKit.podspec */,
+				C2DCD3AFA4B10408644F8B8339C91BD8 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3CFA2E86CA79D85D513702C7BD0B8B2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F0CA215CF29B399AD4FB086D6B7A0E /* MPUIKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B7E835F6F8CB52930AF4CE05AB574AC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				75C42BC565BA9EB239D89DAB11FF4C56 /* Pods-MPUIKit_example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B89D9186A63306CCBDEFC38DE041AD65 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0EEC7A706604990334916C0A9805CC73 /* MPUIKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +329,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3CB282D0983EFB8F38FCD65AA1D6EDBA /* PBXTargetDependency */,
+				7CE1C784517823B774FD3F1D51ADC808 /* PBXTargetDependency */,
 			);
 			name = "Pods-MPUIKit_example";
 			productName = Pods_MPUIKit_example;
@@ -323,12 +338,12 @@
 		};
 		BFE5E8BE351FFA0F11954D4843887D2A /* MPUIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB68E1E1BCDA49EB4D2732F86896D0AD /* Build configuration list for PBXNativeTarget "MPUIKit" */;
+			buildConfigurationList = F37FC6DD35593E9458562D9B51B36C1A /* Build configuration list for PBXNativeTarget "MPUIKit" */;
 			buildPhases = (
-				B89D9186A63306CCBDEFC38DE041AD65 /* Headers */,
-				662A61ABDC712EECCF40B22B5C6EF097 /* Sources */,
-				9F02FEBDFF0478907B6132D3C05B9996 /* Frameworks */,
-				E3AA17D1A2DF5C4B5852FCB63AE37A00 /* Resources */,
+				3CFA2E86CA79D85D513702C7BD0B8B2B /* Headers */,
+				3475AFBE2432C19CA82115B79B951714 /* Sources */,
+				DF3C6ED317DD4751FE6DDC5E7CA6F586 /* Frameworks */,
+				9C13E92B95EBD8D79553227C725A3545 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -375,7 +390,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3AA17D1A2DF5C4B5852FCB63AE37A00 /* Resources */ = {
+		9C13E92B95EBD8D79553227C725A3545 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,37 +400,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		662A61ABDC712EECCF40B22B5C6EF097 /* Sources */ = {
+		3475AFBE2432C19CA82115B79B951714 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2FCAE0BC7EE019D2D01A39C7E5B9CB7 /* BaseViewModel.swift in Sources */,
-				8D53C74AE1C79AF5EAD97BE9F8AA1A68 /* CGRect+Extensions.swift in Sources */,
-				1D12277794FD41A7C241C7ED0842C1F7 /* Date+Extensions.swift in Sources */,
-				A7B9D5FFE9914D642F64773C58A0AC56 /* MPUIKit-dummy.m in Sources */,
-				C4797BB5A89D3319BCDDAFB231221893 /* UniNotificationBanner.swift in Sources */,
-				2CE194563F15A205507FB8147E17E307 /* NSLayoutConstraint+Extensions.swift in Sources */,
-				71E823BAA1DD344D50E668BD676221CB /* PaginationManager.swift in Sources */,
-				CD53C85345F9B38C4D54E13B65B8D46B /* Protocols.swift in Sources */,
-				19678A99C1D550EBCFD602C3DC8A3EAC /* ShimmerTitleLoadingView.swift in Sources */,
-				E762405C72CB105295B76E503B7DDFAA /* UIEdgeInsets+Extensions.swift in Sources */,
-				D3369FEB0D5BA1D9BBACBF381F57E530 /* UINavigationItem+Extensions.swift in Sources */,
-				F7D7F007689EE04BE5127FDF408802F8 /* UIStackView+Extensions.swift in Sources */,
-				1299B2DABC6BC3C06A80DCFD7A7B08EF /* UITableView+Extensions.swift in Sources */,
-				D49A0377490560240D3753A39069F8AE /* UIView+Extensions.swift in Sources */,
-				249993C9F5D58B52D16CD257B85334F0 /* UIViewController+Extensions.swift in Sources */,
-				9AC49B3ABABCEC1B26EAF0BD0E92C5AA /* UniButtonView.swift in Sources */,
-				4C3DFCAAED98CF87EEC30700CF56C330 /* UniImageView.swift in Sources */,
-				BE5AC7FEDADE5FB69408C47B76B57A92 /* UniLoadingView.swift in Sources */,
-				E35619F7B5CA09FD0E4298E7C684B289 /* UniSeparatorView.swift in Sources */,
-				9CC7C33480A78B3619F7155345350DF5 /* UniStackViewView.swift in Sources */,
-				9F521A1E28B2A1D7A9EF850CE9C8A591 /* UniTableViewCell.swift in Sources */,
-				4F659F7B9A7326D70B929098ED4F5ADD /* UniTextFieldView.swift in Sources */,
-				6619AAAE499191B00B2680E18F914E0C /* UniTitleView.swift in Sources */,
-				F66D314EF8CCB4B2A1F2AA6DFAE4AB58 /* UniViewController.swift in Sources */,
-				467E9E0B2BC4594400C57692 /* UniSnackBar.swift in Sources */,
-				8572591DEF07B77A6D04336663C47636 /* UniViewModelBase.swift in Sources */,
-				9D24DD43758B5E6C78748A6B81AFC745 /* ViewWithOutboundsButtons.swift in Sources */,
+				94329582EA32274A4796F86D9D5CDC07 /* BaseViewModel.swift in Sources */,
+				3ED9E7A38DC0FA3EE46D793CEE23EEB3 /* CGRect+Extensions.swift in Sources */,
+				D6949A50CCA64AF67627874A2474A1A0 /* Date+Extensions.swift in Sources */,
+				77F42D8D7BCD67BD603AE136A551C797 /* MPUIKit-dummy.m in Sources */,
+				BF0962258E46C4F5268354E3B41D87BD /* NSLayoutConstraint+Extensions.swift in Sources */,
+				8F1B6006813083402209E261C7199553 /* PaginationManager.swift in Sources */,
+				65FADBEAAC76CD53FE82070BD75557DF /* Protocols.swift in Sources */,
+				2AB099C125D5E9F1B459E4B15F5E5673 /* ShimmerTitleLoadingView.swift in Sources */,
+				E1F72552F9C5AB69AF6E41A805BBDEE3 /* UIEdgeInsets+Extensions.swift in Sources */,
+				71DD3AC0DB31A96BB1380EBD565D8D49 /* UINavigationItem+Extensions.swift in Sources */,
+				2B39F7DE596CE126426FFDBC56EB7982 /* UIStackView+Extensions.swift in Sources */,
+				0986494FB8583721F72E074F5E061D8A /* UITableView+Extensions.swift in Sources */,
+				D60173C98C0897C88DF9E02171DABFA7 /* UIView+Extensions.swift in Sources */,
+				74533D2EF6117453321CC5D0BF6E9EBE /* UIView+Skin.swift in Sources */,
+				4FE604EFB480C7287486AC77187A895B /* UIViewController+Extensions.swift in Sources */,
+				509F1896E36209458DA03BF611973DD7 /* UniButtonView.swift in Sources */,
+				E329803ADD20EEC8EC6821D50321746C /* UniImageView.swift in Sources */,
+				E8EA091598E81CD61212522E63EF2999 /* UniLoadingView.swift in Sources */,
+				4D95615F73C737D7C4619157C2B35704 /* UniNotificationBanner.swift in Sources */,
+				5C4C729EB414A794F1081E0FA35EEF6D /* UniSeparatorView.swift in Sources */,
+				543BD6E6A3905B55B4398089FDFD20D7 /* UniSnackBar.swift in Sources */,
+				45EFCF78E3D9A7383C3CF4F293890ED8 /* UniStackViewView.swift in Sources */,
+				650BA70DB375F9951759401BFB64F92D /* UniTableViewCell.swift in Sources */,
+				C132625FEA776C23C632B77F8C8EBDA9 /* UniTextFieldView.swift in Sources */,
+				46CC27832BC5BA4C00C010C3 /* UILabel+Skin.swift in Sources */,
+				B3D2AFCEE7DF779E5C0A5B7D869E6587 /* UniTitleView.swift in Sources */,
+				446F5DA88B2F5A11CF3DFB1C0AF0FDE9 /* UniViewController.swift in Sources */,
+				527A13E80220C110E32701AFD13E7FDF /* UniViewModelBase.swift in Sources */,
+				C05E62F35F13DE5CD854BFCE5F76222E /* ViewWithOutboundsButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,51 +447,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3CB282D0983EFB8F38FCD65AA1D6EDBA /* PBXTargetDependency */ = {
+		7CE1C784517823B774FD3F1D51ADC808 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MPUIKit;
 			target = BFE5E8BE351FFA0F11954D4843887D2A /* MPUIKit */;
-			targetProxy = 8CD32115349C262B89505AC4EDFC7A3E /* PBXContainerItemProxy */;
+			targetProxy = CD29EBCFDF26FF68285B0726E5A01FF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		14626C7D11FE28317296930156D3BC72 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7FD712BAB899A8ACD242AA7F96E3EE8 /* MPUIKit.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MPUIKit/MPUIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MPUIKit/MPUIKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MPUIKit/MPUIKit.modulemap";
-				PRODUCT_MODULE_NAME = MPUIKit;
-				PRODUCT_NAME = MPUIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		152FCDE04793F8CC0AF6968FEFB75EE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21BCD27B154E03939E3EC5D4493CB775 /* Pods-MPUIKit_example.release.xcconfig */;
@@ -513,9 +494,9 @@
 			};
 			name = Release;
 		};
-		229BD55B172251227F5B1A3C183EE126 /* Debug */ = {
+		3BFC2D165196B33EA6D3D0E1A19E8D98 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48C2E5EC533515D87E0BC3186EA8E7D8 /* MPUIKit.debug.xcconfig */;
+			baseConfigurationReference = A6C5505D10944EF7552737043A9969C2 /* MPUIKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -547,6 +528,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		5A0F082869C5702612CFD2F810B9AE62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64791922A910E75DD02E7A1EB59DB9E4 /* MPUIKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MPUIKit/MPUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MPUIKit/MPUIKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MPUIKit/MPUIKit.modulemap";
+				PRODUCT_MODULE_NAME = MPUIKit;
+				PRODUCT_NAME = MPUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -734,11 +751,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB68E1E1BCDA49EB4D2732F86896D0AD /* Build configuration list for PBXNativeTarget "MPUIKit" */ = {
+		F37FC6DD35593E9458562D9B51B36C1A /* Build configuration list for PBXNativeTarget "MPUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				229BD55B172251227F5B1A3C183EE126 /* Debug */,
-				14626C7D11FE28317296930156D3BC72 /* Release */,
+				3BFC2D165196B33EA6D3D0E1A19E8D98 /* Debug */,
+				5A0F082869C5702612CFD2F810B9AE62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
