@@ -17,8 +17,10 @@ final public class UniSnackBar: UniNotificationBanner {
         super.init(frame: frame,
                    viewSkin: viewSkin,
                    titleSkin: titleSkin,
-                   showFromTop: false,
-                   automaticallyHide: true)
+                   config: UniAnimateShowAndHide.AniAnimateShowAndHideConfig(showFromTop: false,
+                                                                             automaticallyHide: true,
+                                                                             animate: true,
+                                                                             canBeClosed: true))
     }
     
     public required init?(coder aDecoder: NSCoder) {

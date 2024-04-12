@@ -20,7 +20,7 @@ public struct NotificationBannerConfig {
     }
 }
 
-open class UniNotificationBanner: UIView, UniViewWithInsets {
+open class UniNotificationBanner: UniAnimateShowAndHide, UniViewWithInsets {
     
     public var insets: UIEdgeInsets
 
@@ -28,17 +28,6 @@ open class UniNotificationBanner: UIView, UniViewWithInsets {
     var leftImage: UIImageView
     var label: UILabel
     var closeButton: UIButton
-    
-    private var startingPosition: CGPoint?
-    private var snackBarBottomSpace: CGFloat = 20
-    private var topBarTopSpace: CGFloat = 0
-    public var didRemoveFromSuperview: (() -> Void)?
-    public var customCloseAction: (() -> Void)?
-
-    private var showFromTop: Bool
-    private var automaticallyHide: Bool
-    private var animate: Bool
-    private var canBeClosed: Bool
     
     public var text: String? {
         didSet {
@@ -64,39 +53,32 @@ open class UniNotificationBanner: UIView, UniViewWithInsets {
     public init(frame: CGRect,
                 viewSkin: UIView.Skin = .whiteFlat(),
                 titleSkin: UILabel.Skin = .black16(),
-                snackBarBottomSpace: CGFloat = 20,
-                topBarTopSpace: CGFloat = 0,
-                showFromTop: Bool,
-                automaticallyHide: Bool = false,
-                animate: Bool = true,
-                canBeClosed: Bool = true,
+                config: AniAnimateShowAndHideConfig,
                 _ insets: UIEdgeInsets = UIEdgeInsets.all20) {
         
-        self.snackBarBottomSpace = snackBarBottomSpace
-        self.topBarTopSpace = topBarTopSpace
-        self.showFromTop = showFromTop
-        self.automaticallyHide = automaticallyHide
-        self.animate = animate
-        self.canBeClosed = canBeClosed
         self.insets = insets
+        self.rightImage = UIImageView(frame: .basic).setWidth(24).setHeight(24)
+        self.leftImage = UIImageView(frame: .basic).setWidth(24).setHeight(24)
+        self.label = UILabel(frame: .basic)
+        self.closeButton = UIButton().setWidth(40).setHeight(40)
+
+        super.init(frame: frame)
+
+        self.config = config
         
         
         let stackView = UIStackView(frame: .basic).axis(.horizontal).setHeight(28)
         stackView.spacing = 10
         
-        self.leftImage = UIImageView(frame: .basic).setWidth(24).setHeight(24)
-        self.label = UILabel(frame: .basic)
         self.label.numberOfLines = 0
         self.label.apply(skin: titleSkin)
-        self.rightImage = UIImageView(frame: .basic).setWidth(24).setHeight(24)
-        self.closeButton = UIButton()
         
         stackView.addArrangedSubview(leftImage)
         stackView.addArrangedSubview(label)
-        stackView.addArrangedSubview(rightImage)
+        stackView.addArrangedSubview(closeButton)
 
-        super.init(frame: frame)
         
+        self.closeButton.setImage(UIImage.init(systemName: "xmark"), for: .normal)
         self.closeButton.addTarget(self, action: #selector(closeButtonTap(_:)), for: .touchUpInside)
 
         self.embed(stackView, insets: self.insets)
@@ -111,10 +93,10 @@ open class UniNotificationBanner: UIView, UniViewWithInsets {
         rightImage.image = UIImage.init(systemName: "xmark")
         leftImage(image: UIImage.init(systemName: "info.circle"))
         
-        self.canBeClosed ? setupPanGesture() : nil
-        startingPosition = frame.origin
+        self.config.canBeClosed ? setupPanGesture() : nil
+        config.startingPosition = frame.origin
         
-        if self.canBeClosed {
+        if self.config.canBeClosed {
             self.rightImage.isHidden = false
             self.closeButton.isHidden = false
         } else {
@@ -122,20 +104,69 @@ open class UniNotificationBanner: UIView, UniViewWithInsets {
             self.closeButton.isHidden = true
         }
     }
+}
+
+open class UniAnimateShowAndHide: UIView {
+    
+    public struct AniAnimateShowAndHideConfig {
+        
+        public var showFromTop: Bool
+        public var automaticallyHide: Bool
+        public var animate: Bool
+        public var canBeClosed: Bool
+        
+        public var startingPosition: CGPoint?
+        public var snackBarBottomSpace: CGFloat = 20
+        public var topBarTopSpace: CGFloat = 0
+        
+        public var didRemoveFromSuperview: (() -> Void)?
+        public var customCloseAction: (() -> Void)?
+        
+        public init(showFromTop: Bool, automaticallyHide: Bool, animate: Bool, canBeClosed: Bool, startingPosition: CGPoint? = nil, snackBarBottomSpace: CGFloat = 20, topBarTopSpace: CGFloat = 0, didRemoveFromSuperview: ( () -> Void)? = nil, customCloseAction: ( () -> Void)? = nil) {
+            self.showFromTop = showFromTop
+            self.automaticallyHide = automaticallyHide
+            self.animate = animate
+            self.canBeClosed = canBeClosed
+            self.startingPosition = startingPosition
+            self.snackBarBottomSpace = snackBarBottomSpace
+            self.topBarTopSpace = topBarTopSpace
+            self.didRemoveFromSuperview = didRemoveFromSuperview
+            self.customCloseAction = customCloseAction
+        }
+    }
+    
+    public var config: AniAnimateShowAndHideConfig
+    
+    public required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    public override init(frame: CGRect) {
+        
+        self.config = AniAnimateShowAndHideConfig(showFromTop: false, automaticallyHide: false, animate: true, canBeClosed: true)
+        
+        super.init(frame: frame)
+    }
+
+    public convenience init(config: AniAnimateShowAndHideConfig) {
+        self.init(frame: .basic)
+
+        self.config = config
+    }
     
     public override func didMoveToSuperview() {
         showNotificationBanner()
     }
     
-    private func showNotificationBanner() {
+    public func showNotificationBanner() {
 
-        UIView.animate(withDuration: self.animate ? 0.4 : 0) { [weak self] in
+        UIView.animate(withDuration: self.config.animate ? 0.4 : 0) { [weak self] in
             guard let self = self, let superView = self.superview else { return }
 
-            self.frame.origin.y = self.showFromTop ? self.topBarTopSpace : (superView.frame.height - self.frame.height - self.snackBarBottomSpace)
+            self.frame.origin.y = self.config.showFromTop ? self.config.topBarTopSpace : (superView.frame.height - self.frame.height - self.config.snackBarBottomSpace)
         } completion: { [weak self] (_) in
             guard let self = self else { return }
-            if self.automaticallyHide {
+            if self.config.automaticallyHide {
                 let hideTask = DispatchWorkItem { [weak self] in
                     self?.hideNotificationBanner(to: .down)
                 }
@@ -144,23 +175,23 @@ open class UniNotificationBanner: UIView, UniViewWithInsets {
         }
     }
     
-    public func hideTopBar(to direction: UISwipeGestureRecognizer.Direction) {
+    func hideTopBar(to direction: UISwipeGestureRecognizer.Direction) {
         hideNotificationBanner(to: direction)
     }
     
-    public func hideSnackBar(to direction: UISwipeGestureRecognizer.Direction) {
+    func hideSnackBar(to direction: UISwipeGestureRecognizer.Direction) {
         hideNotificationBanner(to: direction)
     }
     
-    public func hideNotificationBanner(to direction: UISwipeGestureRecognizer.Direction) {
-        UIView.animate(withDuration: self.animate ? 0.4 : 0) { [weak self] in
+    func hideNotificationBanner(to direction: UISwipeGestureRecognizer.Direction) {
+        UIView.animate(withDuration: self.config.animate ? 0.4 : 0) { [weak self] in
             guard let self = self, let superView = self.superview else { return }
 
             switch direction {
             case .up:
-                self.frame.origin.y = (self.startingPosition?.y ?? 0) - self.frame.height
+                self.frame.origin.y = (self.config.startingPosition?.y ?? 0) - self.frame.height
             case .down:
-                self.frame.origin.y = self.startingPosition?.y ?? 0
+                self.frame.origin.y = self.config.startingPosition?.y ?? 0
             case .left:
                 self.frame.origin.x = 0 - self.frame.width
             case .right:
@@ -170,15 +201,15 @@ open class UniNotificationBanner: UIView, UniViewWithInsets {
             }
         } completion: { [weak self] (_) in
             self?.removeFromSuperview()
-            self?.didRemoveFromSuperview?()
+            self?.config.didRemoveFromSuperview?()
         }
     }
 
     @IBAction func closeButtonTap(_ sender: UIButton) {
-        if let customAction = customCloseAction {
+        if let customAction = config.customCloseAction {
             customAction()
         } else {
-            hideNotificationBanner(to: self.showFromTop ? .up : .down)
+            hideNotificationBanner(to: self.config.showFromTop ? .up : .down)
         }
     }
     
@@ -194,7 +225,7 @@ open class UniNotificationBanner: UIView, UniViewWithInsets {
         self.addGestureRecognizer(rightSwipe)
         self.addGestureRecognizer(leftSwipe)
         
-        if self.showFromTop {
+        if self.config.showFromTop {
             
             let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
             upSwipe.direction = .up
@@ -213,5 +244,5 @@ open class UniNotificationBanner: UIView, UniViewWithInsets {
     private func handleGesture(_ sender: UISwipeGestureRecognizer) {
         hideNotificationBanner(to: sender.direction)
     }
+    
 }
-

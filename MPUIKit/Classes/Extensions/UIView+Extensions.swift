@@ -139,6 +139,21 @@ public extension UIView {
         )
     }
     
+    @objc func embedCenterXY(_ view: UIView, insets: UIEdgeInsets = .zero) {
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+        NSLayoutConstraint.activate(
+            [
+                NSLayoutConstraint.centerX(to: view, secondItem: self),
+                NSLayoutConstraint.centerY(to: view, secondItem: self)
+//                view.topAnchor.constraint(equalTo: topAnchor, constant: insets.top),
+//                view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: insets.left),
+//                view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -insets.right),
+//                view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -insets.bottom)
+            ]
+        )
+    }
+    
     static func loadingTableFooterView() -> UIView {
         
         let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40))

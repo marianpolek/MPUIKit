@@ -63,6 +63,14 @@ public extension UIView.Skin {
         return UIView.Skin(backgroundColor: .white, cornerRadius: 10)
     }
     
+    static var redFlat: Provider = {
+        return UIView.Skin(backgroundColor: .red)
+    }
+    
+    static var redCorner10: Provider = {
+        return UIView.Skin(backgroundColor: .red, cornerRadius: 10)
+    }
+    
     static var blackCorner10: Provider = {
         return UIView.Skin(backgroundColor: .black, cornerRadius: 10)
     }

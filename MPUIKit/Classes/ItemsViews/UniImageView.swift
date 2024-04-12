@@ -45,10 +45,10 @@ open class UniImageView: UIView, UniViewWithInsets {
         self.addSubview(imageView)
         NSLayoutConstraint.activate(
             [
-                imageView.topAnchor.constraint(greaterThanOrEqualTo: self.topAnchor, constant: insets.top),
-                imageView.leadingAnchor.constraint(greaterThanOrEqualTo: self.leadingAnchor, constant: insets.left),
-                self.trailingAnchor.constraint(greaterThanOrEqualTo: imageView.trailingAnchor, constant: -insets.right),
-                self.bottomAnchor.constraint(greaterThanOrEqualTo: imageView.bottomAnchor, constant: -insets.bottom),
+                NSLayoutConstraint.topMarginGreaterOrEqual(to: imageView, secondItem: self, value: insets.top),
+                NSLayoutConstraint.leftMarginGreaterOrEqual(to: imageView, secondItem: self, value: insets.top),
+                NSLayoutConstraint.rightMarginGreaterOrEqual(to: self, secondItem: imageView, value: insets.top),
+                NSLayoutConstraint.bottomMarginGreaterOrEqual(to: self, secondItem: imageView, value: insets.top),
                 NSLayoutConstraint.centerX(to: imageView, secondItem: self),
                 NSLayoutConstraint.centerY(to: imageView, secondItem: self)
             ]

@@ -24,8 +24,10 @@ extension UIViewController {
         if self.view.containsType(class: UniSnackBar.self) != nil { return }
 
         let snackBarWidth = UIScreen.main.bounds.width - snackBarSideSpace * 2
+        
         let snackBar = UniSnackBar(
-            frame: CGRect(
+            frame:
+            CGRect(
                 x: snackBarSideSpace,
                 y: snackBarStartingPosition,
                 width: snackBarWidth,
@@ -39,10 +41,37 @@ extension UIViewController {
         snackBar.leftImage(image: image)
 
         self.view.addSubview(snackBar)
-        
         snackBar.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint(item: snackBar, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: snackBarSideSpace).isActive = true
-        NSLayoutConstraint(item: self.view, attribute: .trailing, relatedBy: .equal, toItem: snackBar, attribute: .trailing, multiplier: 1, constant: snackBarSideSpace).isActive = true
-        NSLayoutConstraint(item: self.view, attribute: .bottom, relatedBy: .equal, toItem: snackBar, attribute: .bottom, multiplier: 1, constant: snackBarBottomSpace + bottomSpace).isActive = true
+        NSLayoutConstraint(item: snackBar, 
+                           attribute: .leading,
+                           relatedBy: .equal, 
+                           toItem: self.view,
+                           attribute: .leading,
+                           multiplier: 1,
+                           constant: snackBarSideSpace).isActive = true
+        
+        NSLayoutConstraint(item: self.view, 
+                           attribute: .trailing,
+                           relatedBy: .equal,
+                           toItem: snackBar,
+                           attribute: .trailing,
+                           multiplier: 1,
+                           constant: snackBarSideSpace).isActive = true
+        
+        NSLayoutConstraint(item: self.view, 
+                           attribute: .bottom,
+                           relatedBy: .equal,
+                           toItem: snackBar,
+                           attribute: .bottom,
+                           multiplier: 1,
+                           constant: snackBarBottomSpace + bottomSpace).isActive = true
+        
+        NSLayoutConstraint(item: snackBar,
+                           attribute: .top,
+                           relatedBy: .greaterThanOrEqual,
+                           toItem: self.view,
+                           attribute: .top,
+                           multiplier: 1,
+                           constant: 10).isActive = true
     }
 }

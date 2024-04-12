@@ -66,6 +66,26 @@ public extension NSLayoutConstraint {
         return item.bottomAnchor.constraint(equalTo: item.bottomAnchor, constant: -value)
     }
     
+    static func leftMarginGreaterOrEqual(to item: UIView, secondItem: UIView, value: CGFloat, multiplier: CGFloat = 1) -> NSLayoutConstraint {
+        
+        return item.leadingAnchor.constraint(greaterThanOrEqualTo: item.leadingAnchor, constant: value)
+    }
+    
+    static func rightMarginGreaterOrEqual(to item: UIView, secondItem: UIView, value: CGFloat, multiplier: CGFloat = 1) -> NSLayoutConstraint {
+        
+        return item.trailingAnchor.constraint(greaterThanOrEqualTo: item.trailingAnchor, constant: -value)
+    }
+    
+    static func topMarginGreaterOrEqual(to item: UIView, secondItem: UIView, value: CGFloat, multiplier: CGFloat = 1) -> NSLayoutConstraint {
+        
+        return item.topAnchor.constraint(greaterThanOrEqualTo: item.topAnchor, constant: value)
+    }
+    
+    static func bottomMarginGreaterOrEqual(to item: UIView, secondItem: UIView, value: CGFloat, multiplier: CGFloat = 1) -> NSLayoutConstraint {
+        
+        return item.bottomAnchor.constraint(greaterThanOrEqualTo: item.bottomAnchor, constant: -value)
+    }
+    
     static func equalWidth(to item: UIView, secondItem: UIView, multiplier: CGFloat = 1, priority: UILayoutPriority = .required) -> NSLayoutConstraint {
         let const = NSLayoutConstraint(item: item, attribute: .width, relatedBy: .equal, toItem: secondItem, attribute: .width, multiplier: multiplier, constant: 0.0)
         const.priority = priority

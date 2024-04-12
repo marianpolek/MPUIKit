@@ -16,6 +16,7 @@ class Example2UniViewModel: UniViewModelBase {
     private var tableView: UniTableView?
     private var footerType: UniViewController.FooterStickyType
     
+    private var tableListItems: [UniViewWithInsets] = []
     
     init(coordinator: Example2UniTableViewCoordinatorType,
          footerType: UniViewController.FooterStickyType) {
@@ -41,39 +42,42 @@ class Example2UniViewModel: UniViewModelBase {
         
         self.output.viewDidLoad?(self.footerType)
         
+        self.tableListItems = [UniSeparatorView(),
+                               UniButtonView(button: UniButton().title(String.random(length: 10))
+                                  .isEnabled(true)
+                                  .tapAction { [weak self] in
+                                                 
+                                                 self?.output.showViewInList?(UIView.shimmeringLoadingView())
+                                                 
+                                                 DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: { [weak self] in
+                                                     self?.output.hideViewInList?()
+                                                 })
+                                                 
+                                                 self?.output.showSnackBar?(String.random(length: 40))
+
+                                                 let bannerConfig = NotificationBannerConfig(
+                                                     title: String.random(length: 40),
+                                                     icon: UIImage.init(named: "Info-filled")
+                                                 )
+                                                 self?.output.bannerConfig?(bannerConfig)
+                                             }),
+                               UniButtonView(button: UniButton().title("add new item to list for testing purposes")
+                                  .isEnabled(true)
+                                  .tapAction { [weak self] in
+                                      self?.addNewItemsToTableList()
+                                             }),
+                               UniNotificationBanner(frame: .basic, viewSkin: .redFlat(), config: UniAnimateShowAndHide.AniAnimateShowAndHideConfig(showFromTop: false, automaticallyHide: false, animate: false, canBeClosed: false))
+                          ]
+        
         
         self.output.topStickedItems?([UniTitleView(text: String.random(length: 40))
                                      ])
         
         tableItems.removeAll()
         tableItems = [
-            
            (nil,
-            [UniSeparatorView(),
-             UniButtonView(button: UniButton().title(String.random(length: 10))
-                .isEnabled(true)
-                .tapAction { [weak self] in
-                               
-                               self?.output.showViewInList?(UIView.shimmeringLoadingView())
-                               
-                               DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: { [weak self] in
-                                   self?.output.hideViewInList?()
-                               })
-                               
-                               self?.output.showSnackBar?(String.random(length: 40))
-
-                               let bannerConfig = NotificationBannerConfig(
-                                   title: String.random(length: 40),
-                                   icon: UIImage.init(named: "Info-filled")
-                               )
-                               self?.output.bannerConfig?(bannerConfig)
-                           }),
-             UniButtonView(button: UniButton().title(String.random(length: 30))
-                .isEnabled(true)
-                .tapAction { [weak self] in
-                               self?.output.bannerConfig?(nil)
-                           })
-        ])
+            self.tableListItems
+            )
             ]
         
         
@@ -99,5 +103,18 @@ class Example2UniViewModel: UniViewModelBase {
                                        })
                     ])
                     .axis(.vertical)))
+    }
+    
+    private func addNewItemsToTableList() {
+        
+        self.tableListItems.append(UniTitleView(text: String.random(length: 100)))
+        
+        tableItems = [
+           (nil,
+            self.tableListItems
+            )
+            ]
+        
+        self.output.reloadTableData?(self.footerType)
     }
 }

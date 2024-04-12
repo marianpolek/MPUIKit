@@ -32,15 +32,7 @@ open class UniLoadingView: UIView, UniViewWithInsets {
     
     public func setup() {
     
-        
-        loadingIndicator.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(loadingIndicator)
-        NSLayoutConstraint.activate(
-            [
-                NSLayoutConstraint.centerX(to: loadingIndicator, secondItem: self),
-                NSLayoutConstraint.centerY(to: loadingIndicator, secondItem: self)
-            ]
-        )
+        self.embedCenterXY(loadingIndicator, insets: self.insets)
     }
 }
 

@@ -72,6 +72,11 @@ public extension UILabel.Skin {
                     textColor: .white)
     }
     
+    static var red16 : Provider = {
+        return Skin(font: UIFont.systemFont(ofSize: 16),
+                    textColor: .red)
+    }
+    
     static var black16 : Provider = {
         return Skin(font: UIFont.systemFont(ofSize: 16),
                     textColor: .black)

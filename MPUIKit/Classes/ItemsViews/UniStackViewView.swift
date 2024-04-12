@@ -50,15 +50,6 @@ open class UniStackViewView: UIView, UniViewWithInsets {
             item.setup()
         }
         
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(stackView)
-        NSLayoutConstraint.activate(
-            [
-                stackView.topAnchor.constraint(equalTo: topAnchor, constant: insets.top),
-                stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: insets.left),
-                stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -insets.right),
-                stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -insets.bottom)
-            ]
-        )
+        self.embed(stackView, insets: self.insets)
     }
 }
