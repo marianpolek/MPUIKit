@@ -50,17 +50,15 @@ public extension UINavigationItem {
         self.setLeftBarButtonItems(buttons, animated: animated)
     }
     
-    enum BackButtonStyle {
+    enum ButtonColorStyle {
         case dark
         case gray
         case light
     }
     
     enum NavButtonType {
-        case backButton(BackButtonStyle)
-        case closeBlue
-        case closeWhite
-        case closeBlack
+        case backButton(ButtonColorStyle)
+        case close(ButtonColorStyle)
         case icon(String)
         case image(String)
         case plainApple(String)
@@ -96,12 +94,26 @@ public extension UINavigationItem {
         }
     }
     
-    func setNavButton(model: NavButtonModel) {
-        self.setNavButton(type: model.type,
-                          position: model.position,
-                          accessibilityString: model.accessibilityString,
-                          tapAction: model.tapAction,
-                          completionBlock: model.completionBlock)
+    func setNavButtons(models: [NavButtonModel]) {
+
+        for position in [.left, .middle, .right] as [NavButtonPosition] {
+            models
+                .filter({ $0.position == position })
+                .handleModels { views in
+                    switch position {
+                    case .left: self.setLeftButtonItems(views)
+                    case .middle: break
+                    case .right: self.setRightButtonItems(views)
+                    }
+                    
+                } justOne: { model in
+                    self.setNavButton(type: model.type,
+                                      position: model.position,
+                                      accessibilityString: model.accessibilityString,
+                                      tapAction: model.tapAction,
+                                      completionBlock: model.completionBlock)
+                }
+        }
     }
     
     func setNavButton(type: NavButtonType,
@@ -144,11 +156,46 @@ public extension UINavigationItem {
         switch type {
         case .customView(let view):
             finalView = view
+        case .backButton(let style):
+            let button = UIButton(type: .custom)
+            button.setImage(UIImage.init(systemName: "arrow.backward"), for: .normal)
+            finalView = button
+            if let cb = completionBlock { cb(button) }
+        case .close(let style):
+            let button = UIButton(type: .close)
+            finalView = button
+            if let cb = completionBlock { cb(button) }
         case .empty:
             break
         default: break
         }
     
         return finalView
+    }
+}
+
+public extension Array where Element == UINavigationItem.NavButtonModel {
+    
+    func handleModels(moreThenOne: (([UIView]) -> ()),
+                        justOne: ((UINavigationItem.NavButtonModel) -> ())) {
+        
+        if self.count > 1 {
+            let leftViews: [UIView] = self.map({ model in
+                
+                let finalView: UIView = UINavigationItem
+                    .navButtonBy(type: model.type,
+                                 tapAction: model.tapAction,
+                                 completionBlock: model.completionBlock)
+                
+                if let accessibilityString = model.accessibilityString {
+                    finalView.isAccessibilityElement = true
+                    finalView.accessibilityLabel = accessibilityString
+                }
+                return finalView
+            })
+            moreThenOne(leftViews)
+        } else if self.count == 1, let model = self.first {
+            justOne(model)
+        }
     }
 }

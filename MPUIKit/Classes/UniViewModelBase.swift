@@ -37,7 +37,7 @@ open class UniViewModelBase: BaseViewModel, ViewModelType, PaginationViewModelTy
         public var hideViewInList: CallbackVoid?
         public var tableViewScrollEnabled: Callback<Bool>?
         public var navTitle: Callback<String>?
-        public var setNavButton: Callback<UINavigationItem.NavButtonModel>?
+        public var setNavButtons: Callback<[UINavigationItem.NavButtonModel]>?
         public var refreshControlForTableView: CallbackVoid?
         public var showFileGetter: Callback<UIDocumentPickerViewController>?
         public var didEndRefreshing: CallbackVoid?

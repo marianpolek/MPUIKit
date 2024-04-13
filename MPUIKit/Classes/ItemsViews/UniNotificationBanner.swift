@@ -246,3 +246,18 @@ open class UniAnimateShowAndHide: UIView {
     }
     
 }
+
+public extension UniAnimateShowAndHide.AniAnimateShowAndHideConfig {
+    
+    static var notMoveableOrAnimateable: UniAnimateShowAndHide.AniAnimateShowAndHideConfig {
+        return UniAnimateShowAndHide.AniAnimateShowAndHideConfig(showFromTop: false, automaticallyHide: false, animate: false, canBeClosed: false)
+    }
+    
+    static var snackBarType: UniAnimateShowAndHide.AniAnimateShowAndHideConfig {
+        return UniAnimateShowAndHide.AniAnimateShowAndHideConfig(showFromTop: false, automaticallyHide: true, animate: true, canBeClosed: true, startingPosition: CGPoint(x: 0, y: UIScreen.main.bounds.height))
+    }
+    
+    static var bannerType: UniAnimateShowAndHide.AniAnimateShowAndHideConfig {
+        return UniAnimateShowAndHide.AniAnimateShowAndHideConfig(showFromTop: true, automaticallyHide: false, animate: false, canBeClosed: true)
+    }
+}

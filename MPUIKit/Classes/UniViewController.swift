@@ -335,7 +335,7 @@ open class UniViewController: UIViewController {
             DispatchQueue.main.async { [weak self] in
                 if let config = config {
                     
-                    let bannerChipView = self?.wholeScreenStackView.getBannerView() ?? UniNotificationBanner(frame: .basic, viewSkin: .redFlat(), config: UniAnimateShowAndHide.AniAnimateShowAndHideConfig(showFromTop: true, automaticallyHide: false, animate: false, canBeClosed: true))
+                    let bannerChipView = self?.wholeScreenStackView.getBannerView() ?? UniNotificationBanner(frame: .basic, viewSkin: .redFlat(), config: UniAnimateShowAndHide.AniAnimateShowAndHideConfig.bannerType)
 //                    bannerChipView.apply(skin: config.skin)
                     if let image = config.icon {
                         bannerChipView.leftImage(image: config.icon, width: 24, height: 24)
@@ -401,8 +401,8 @@ open class UniViewController: UIViewController {
             }
         }
         
-        viewModel?.output.setNavButton = { [weak self] model in
-            self?.navigationItem.setNavButton(model: model)
+        viewModel?.output.setNavButtons = { [weak self] models in
+            self?.navigationItem.setNavButtons(models: models)
         }
         
         viewModel?.output.refreshControlForTableView = { [weak self] in

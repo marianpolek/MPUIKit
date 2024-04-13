@@ -125,5 +125,8 @@ class ExampleUniViewModel: UniViewModelBase {
                                        })
                     ])
                     .axis(.vertical)))
+        
+        self.output.setNavButtons?([UINavigationItem.NavButtonModel(type: .close(.dark), position: .right),
+                                   UINavigationItem.NavButtonModel(type: .backButton(.gray), position: .right)])
     }
 }

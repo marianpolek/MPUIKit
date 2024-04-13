@@ -66,7 +66,7 @@ class Example2UniViewModel: UniViewModelBase {
                                   .tapAction { [weak self] in
                                       self?.addNewItemsToTableList()
                                              }),
-                               UniNotificationBanner(frame: .basic, viewSkin: .redFlat(), config: UniAnimateShowAndHide.AniAnimateShowAndHideConfig(showFromTop: false, automaticallyHide: false, animate: false, canBeClosed: false))
+                               UniNotificationBanner(frame: .basic, viewSkin: .redFlat(), config: UniAnimateShowAndHide.AniAnimateShowAndHideConfig.notMoveableOrAnimateable)
                           ]
         
         

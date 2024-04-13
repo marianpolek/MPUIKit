@@ -13,29 +13,29 @@ extension UIViewController {
     public func showSnackBar(with text: String,
                              viewSkin: UIView.Skin = .whiteFlat(),
                              titleSkin: UILabel.Skin = .black16(),
+                             insets: UIEdgeInsets = .all20,
                              image: UIImage? = UIImage.init(systemName: "info.circle"),
                              bottomSpace: CGFloat = 0) {
         
         let snackBarStartingPosition = UIScreen.main.bounds.maxY
         let snackBarHeight: CGFloat = 56
-        let snackBarSideSpace: CGFloat = 10
-        let snackBarBottomSpace: CGFloat = 20
 
         if self.view.containsType(class: UniSnackBar.self) != nil { return }
 
-        let snackBarWidth = UIScreen.main.bounds.width - snackBarSideSpace * 2
+        let snackBarWidth = UIScreen.main.bounds.width - insets.left - insets.right
         
-        let snackBar = UniSnackBar(
+        let snackBar =
+        UniSnackBar(
             frame:
             CGRect(
-                x: snackBarSideSpace,
+                x: insets.left,
                 y: snackBarStartingPosition,
                 width: snackBarWidth,
                 height: snackBarHeight
             ), 
             viewSkin: viewSkin,
             titleSkin: titleSkin,
-            snackBarBottomSpace: snackBarBottomSpace
+            snackBarBottomSpace: insets.bottom
         )
         snackBar.text = text
         snackBar.leftImage(image: image)
@@ -48,7 +48,7 @@ extension UIViewController {
                            toItem: self.view,
                            attribute: .leading,
                            multiplier: 1,
-                           constant: snackBarSideSpace).isActive = true
+                           constant: insets.left).isActive = true
         
         NSLayoutConstraint(item: self.view, 
                            attribute: .trailing,
@@ -56,7 +56,7 @@ extension UIViewController {
                            toItem: snackBar,
                            attribute: .trailing,
                            multiplier: 1,
-                           constant: snackBarSideSpace).isActive = true
+                           constant: insets.right).isActive = true
         
         NSLayoutConstraint(item: self.view, 
                            attribute: .bottom,
@@ -64,7 +64,7 @@ extension UIViewController {
                            toItem: snackBar,
                            attribute: .bottom,
                            multiplier: 1,
-                           constant: snackBarBottomSpace + bottomSpace).isActive = true
+                           constant: insets.bottom + bottomSpace).isActive = true
         
         NSLayoutConstraint(item: snackBar,
                            attribute: .top,
