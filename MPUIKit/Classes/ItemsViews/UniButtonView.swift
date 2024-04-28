@@ -70,3 +70,8 @@ open class UniButton: UIButton {
         action?()
     }
 }
+
+@available(iOS 17, *)
+#Preview(traits: .defaultLayout, body: {
+    UniButtonView(button: UniButton(frame: .basic).title("title for button"))
+})
